@@ -1,0 +1,30 @@
+# Maven build directory
+target/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.code-workspace
+
+# Compiled files
+*.class
+
+# Log files
+*.log
+log/
+logs/
+
+# Local configuration file (usa per variabili d'ambiente locali)
+.env
+application-dev.properties
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
