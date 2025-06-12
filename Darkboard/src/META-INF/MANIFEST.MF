@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+Rsrc-Class-Path: ./ Ludii-1.3.13.jar
+Rsrc-Main-Class: main.LaunchLudii
+Class-Path: .
+
