@@ -23,7 +23,7 @@ flowchart LR
 
   C3PO -->|sends game state as prompt| LLM
   LLM -->|suggested move in text| C3PO
-``
+````
 
 ---
 
@@ -60,11 +60,13 @@ llm.ollama.host=http://localhost:11434
 
 ## Build & Run
 
-_Coming soon_
+*Coming soon*
 
 ---
 
 ## TODO
 
-- [ ] 
-- [ ] 
+* [ ] 
+* [ ] 
+
+```
