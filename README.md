@@ -14,15 +14,15 @@ The architecture is composed of:
 
 ```mermaid
 flowchart LR
-  LUDII[JAR: Ludii Engine] 
-  C3PO[JAR: C3PO Agent (implements AI)\n→ uses LangChain4j + Quarkus] 
-  LLM[LLM Backend\n(OpenAI, Ollama...)]
+  LUDII["Ludii Engine (JAR)"]
+  C3PO["C3PO Agent (JAR)\nUses LangChain4j + Quarkus"]
+  LLM["LLM Backend (OpenAI, Ollama, etc.)"]
 
-  LUDII -- initAI(), selectAction() --> C3PO
-  C3PO -- returns chosen Move --> LUDII
+  LUDII -->|initAI(), selectAction()| C3PO
+  C3PO -->|returns Move| LUDII
 
-  C3PO -- API call with game state --> LLM
-  LLM -- suggested move (text) --> C3PO
+  C3PO -->|API call with game state| LLM
+  LLM -->|suggested move| C3PO
 ```
 
 📝 **Note**: `LangChain4j` and `Quarkus` are not external services — they are embedded inside the C3PO agent and used internally for interacting with the LLM.
