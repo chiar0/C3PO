@@ -14,15 +14,15 @@ The architecture is composed of:
 
 ```mermaid
 graph LR
-  subgraph LUDII Engine
-    LUDII[JAR: Ludii]
-    AGENT[JAR: C-3PO (AI agent)]
+  subgraph "LUDII Engine"
+    LUDII["JAR: Ludii"]
+    AGENT["JAR: C-3PO (AI agent)"]
     LUDII --> AGENT
   end
 
-  AGENT --selectAction()--> LANGCHAIN[LangChain4j + Quarkus]
-  LANGCHAIN --API request--> LLM[LLM (GPT, Ollama...)]
-  LLM --suggested move--> LANGCHAIN
+  AGENT -- "selectAction()" --> LANGCHAIN["LangChain4j + Quarkus"]
+  LANGCHAIN -- "API request" --> LLM["LLM (GPT, Ollama...)"]
+  LLM -- "suggested move" --> LANGCHAIN
   LANGCHAIN --> AGENT
 ```
 
