@@ -4,7 +4,7 @@ This repository demonstrates how to integrate **Ludii** (a general game playing 
 The architecture is composed of:
 
 - **Ludii**: runs the game and enforces rules.
-- **C-3PO (Java)**: a custom AI agent implementing Ludii's `AI` interface.
+- **C-3PO**: a custom AI agent implementing Ludii's `AI` interface.
 - **LangChain4j + Quarkus**: Java framework to interact with LLMs, both online (e.g., OpenAI GPT) and offline (e.g., Ollama).
 - **LLM**: a language model used to choose moves based on the current game state.
 
