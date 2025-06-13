@@ -68,5 +68,3 @@ llm.ollama.host=http://localhost:11434
 
 * [ ] 
 * [ ] 
-
-```
