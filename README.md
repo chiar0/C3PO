@@ -15,7 +15,7 @@ The architecture is composed of:
 ```mermaid
 flowchart LR
   LUDII["Ludii Engine (JAR)"]
-  C3PO["C3PO Agent (Java, implements AI)\nIncludes LangChain4j + Quarkus"]
+  C3PO["C3PO Agent (JAR) includes LangChain4j + Quarkus"]
   LLM["LLM Backend\n(OpenAI, Ollama, etc.)"]
 
   LUDII -->|calls initAI and selectAction| C3PO
