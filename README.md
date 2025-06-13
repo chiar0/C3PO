@@ -25,8 +25,6 @@ flowchart LR
   LLM -->|suggested move in text| C3PO
 ``
 
-**Note** `LangChain4j` and `Quarkus` are not external services — they are embedded inside the C3PO agent and used internally for interacting with the LLM.
-
 ---
 
 ## ⚙️ How It Works
