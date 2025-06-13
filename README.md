@@ -13,18 +13,17 @@ The architecture is composed of:
 ## 🧠 Architecture
 
 ```mermaid
-graph LR
-  subgraph "LUDII Engine"
-    LUDII["JAR: Ludii"]
-    AGENT["JAR: C-3PO (AI agent)"]
-    LUDII --> AGENT
-  end
+graph TD
+  LUDII["Ludii (Game Engine)"]
+  C3PO["C3PO Agent (Java)"]
+  LLM["LLM (GPT, Ollama, etc.)"]
 
-  AGENT -- "selectAction()" --> LANGCHAIN["LangChain4j + Quarkus"]
-  LANGCHAIN -- "API request" --> LLM["LLM (GPT, Ollama...)"]
-  LLM -- "suggested move" --> LANGCHAIN
-  LANGCHAIN --> AGENT
+  LUDII -- calls --> C3PO
+  C3PO -- "uses embedded LangChain4j + Quarkus" --> LLM
+  LLM -- "suggested move" --> C3PO
 ```
+
+📝 **Note**: `LangChain4j` and `Quarkus` are not external services — they are embedded inside the C3PO agent and used internally for interacting with the LLM.
 
 ---
 
