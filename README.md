@@ -16,7 +16,7 @@ The architecture is composed of:
 flowchart LR
   LUDII["Ludii Engine (JAR)"]
   C3PO["C3PO Agent (JAR) includes LangChain4j + Quarkus"]
-  LLM["LLM Backend\n(OpenAI, Ollama, etc.)"]
+  LLM["LLM Backend (OpenAI, Ollama, etc.)"]
 
   LUDII -->|calls initAI and selectAction| C3PO
   C3PO -->|returns chosen move| LUDII
