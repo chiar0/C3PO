@@ -21,7 +21,7 @@ flowchart LR
   LUDII -->|calls initAI and selectAction| C3PO
   C3PO -->|returns chosen move| LUDII
 
-  C3PO -->|sends game state as prompt| LLM
+  C3PO -->|sends game informations as prompt| LLM
   LLM -->|suggested move in text| C3PO
 ````
 
