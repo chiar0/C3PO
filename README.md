@@ -10,7 +10,7 @@ The architecture is composed of:
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -27,7 +27,7 @@ flowchart LR
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. Ludii starts a match and periodically calls the `selectAction()` method on the C3PO bot.
 2. C3PO accesses the current game state (via `Context`, `Game`, `Move`, etc.) and builds a **textual prompt** describing the situation.
@@ -38,12 +38,12 @@ flowchart LR
 
 ---
 
-## 🔌 Support for Local and Remote LLMs
+## Support for Local and Remote LLMs
 
 You can configure the agent to use:
 
-* 🌐 **Remote models**: like GPT-4 via OpenAI, Anthropic, Mistral on OpenRouter, etc.
-* 💻 **Local models**: like **Ollama**, running LLMs locally (e.g., `mistral`, `llama3`, `codellama`).
+* **Remote models**: like GPT-4 via OpenAI, Anthropic, Mistral on OpenRouter, etc.
+* **Local models**: like **Ollama**, running LLMs locally (e.g., `mistral`, `llama3`, `codellama`).
 
 Configure the LangChain4j backend in `application.properties`:
 
@@ -58,13 +58,13 @@ llm.ollama.host=http://localhost:11434
 
 ---
 
-## 🔧 Build & Run
+## Build & Run
 
 _Coming soon_
 
 ---
 
-## 📁 TODO
+## TODO
 
 - [ ] 
 - [ ] 
